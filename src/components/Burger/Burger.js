@@ -1,4 +1,5 @@
 import React from 'react';
+//import { withRouter } from 'react-router-dom';
 
 import classes from './Burger.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
@@ -40,3 +41,6 @@ const burger = (props) => {
 };
 
 export default burger;
+// pozwala na dostęp do propsów routingowych
+// w componencie nie użytym wproct w route
+//export default withRouter(burger);
