@@ -22,3 +22,10 @@
 .Danger {
   color: #944317;
 }
+
+.Button:disabled,
+.Success:disabled,
+.Danger:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
