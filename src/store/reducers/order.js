@@ -1,8 +1,5 @@
 import * as actionTypes from '../actions/actionTypes';
-import { updateObject } from '../utils';
-// import { purchaseBurgerFailed, fetchOrdersStart } from '../actions/order';
-// import { purchaseBurgerSuccess } from '../actions/order';
-// import { purchaseBurgerStart } from './../actions/order';
+import { updateObject } from '../../shared/utils';
 
 const initialState = {
   orders: [],
