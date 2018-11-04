@@ -8,17 +8,18 @@ const sideDrawer = (props) => {
   const SideDrawerStateClass = (props.open) ? classes.Open : classes.Close;
   const attachedClasses = [classes.SideDrawer, SideDrawerStateClass].join(' ');
 
-  return(
+  return (
     <React.Fragment>
       <Backdrop
         show={props.open}
-        clicked={props.closed}/>
+        clicked={props.closed} />
       <div className={attachedClasses}>
-      <div className={classes.Logo}>
-        <Logo />
-      </div>
+        <div className={classes.Logo}>
+          <Logo />
+        </div>
         <nav>
-          <NavigationItems />
+          <NavigationItems
+            isAuthenticated={props.isAuth} />
         </nav>
       </div>
     </React.Fragment>
